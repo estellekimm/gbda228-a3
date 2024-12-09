@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photography Portfolio</title>
+    <style>
+        body {
+            font-family: "Geist Mono", monospace; 
+            font-size: 16px;
+            line-height: 1.6;
+            color: #FFFFFF;
+            background-color: #000000;
+            padding-top: 60px; 
+        }
+
+        .kode-mono-custom {
+            font-family: "Kode Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 600; 
+            font-style: normal;
+        }
+
+        /* Additional CSS for body text or headings */
+        h1, h2, h3 {
+            font-family: "Kode Mono", monospace;
+        }
+
+        .kode-mono-light {
+            font-family: "Kode Mono", monospace;
+            font-weight: 400; /* Lighter weight */
+        }
+
+        .kode-mono-bold {
+            font-family: "Kode Mono", monospace;
+            font-weight: 700; /* Bolder weight */
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+     nav {
+    position: fixed;      
+    top: 0;               
+    left: 0;             
+    width: 100%;         
+    background-color: #000000;
+    text-align: center;
+    z-index: 10; 
+    font-family: "Arial", monospace; 
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+     color: #B726C1;
+}
+
+        /* Section Styles */
+        section {
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            color: #444;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+
+        section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Image Gallery Section */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Table Section */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #444;
+            color: white;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #f4f4f4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>My Photography Portfolio</h1>
+        <p>Capturing moments that last a lifetime</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#resume">RESUME</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="home">
+        <h2>About Me</h2>
+        <p>Hello! I'm [Your Name], a passionate photographer with a love for capturing beautiful moments. I specialize in portrait and landscape photography and enjoy working with both natural and studio lighting.</p>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="about">
+        <h2>Photography Gallery</h2>
+        <div class="gallery">
+            <img src="image1.jpg" alt="A beautiful sunset over the ocean">
+            <img src="image2.jpg" alt="A portrait of a person with natural lighting">
+            <img src="image3.jpg" alt="A cityscape during golden hour">
+            <img src="image4.jpg" alt="A landscape photograph with mountains and trees">
+            <img src="image5.jpg" alt="A close-up of a flower in the wild">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="projects">
+        <h2>Services</h2>
+        <p>I offer a range of photography services, including:</p>
+        <ul>
+            <li>Portrait Photography</li>
+            <li>Event Photography</li>
+            <li>Landscape Photography</li>
+            <li>Photo Editing</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Portrait Photography</td>
+                <td>$150 per session</td>
+            </tr>
+            <tr>
+                <td>Event Photography</td>
+                <td>$500 per event</td>
+            </tr>
+            <tr>
+                <td>Landscape Photography</td>
+                <td>$200 per photo</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="resume">
+        <h2>Contact</h2>
+        <p>If you're interested in booking a session or have any questions, feel free to reach out!</p>
+        <p>Email: <a href="mailto:yourname@uwaterloo.ca">yourname@uwaterloo.ca</a></p>
+        <p>Follow me on <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 [Your Name] Photography. All Rights Reserved.</p>
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
