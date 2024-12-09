@@ -1,222 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Photography Portfolio</title>
+    <title>Portfolio</title>
     <style>
-        body {
-            font-family: "Geist Mono", monospace; 
-            font-size: 16px;
-            line-height: 1.6;
-            color: #FFFFFF;
-            background-color: #000000;
-            padding-top: 60px; 
-        }
+      body {
+        font-family: "Geist Mono", monospace;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #FFFFFF;
+        background-color: #000000;
+        padding-top: 60px;
+        margin: 0;
+      }
 
-        .kode-mono-custom {
-            font-family: "Kode Mono", monospace;
-            font-optical-sizing: auto;
-            font-weight: 600; 
-            font-style: normal;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        /* Additional CSS for body text or headings */
-        h1, h2, h3 {
-            font-family: "Kode Mono", monospace;
-        }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        z-index: 10;
+        font-family: "Arial", monospace;
+        font-size: 15px;
+      }
 
-        .kode-mono-light {
-            font-family: "Kode Mono", monospace;
-            font-weight: 400; /* Lighter weight */
-        }
+      nav .left,
+      nav .right {
+        display: flex;
+        align-items: center;
+      }
 
-        .kode-mono-bold {
-            font-family: "Kode Mono", monospace;
-            font-weight: 700; /* Bolder weight */
-        }
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        display: inline-block;
+      }
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+      nav a:hover {
+        color: #B726C1;
+      }
 
-        header h1 {
-            font-size: 36px;
-        }
+      /* Home Section */
+      #home {
+        position: relative;
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+      }
 
-     nav {
-    position: fixed;      
-    top: 0;               
-    left: 0;             
-    width: 100%;         
-    background-color: #000000;
-    text-align: center;
-    z-index: 10; 
-    font-family: "Arial", monospace; 
-}
+      #home img {
+        width: 100%;
+        height: auto;
+        margin: 100px 0;
+        max-width: 100%;
+      }
 
-nav a {
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-    display: inline-block;
-}
+       #about {
+      width: 1000px;
+      height: 500px;
+      background-color: #2DE1C2;
+      clear: both;
+      position: relative;
+      top: 20px;
+    }
 
-nav a:hover {
-     color: #B726C1;
-}
+    #blockA {
+      width: 333px;
+      height: 200px;
+      background-color: #7FBEAB;
+      float: left;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
 
-        /* Section Styles */
-        section {
-            padding: 50px 20px;
-        }
+      /* Section Padding Adjustment */
+      section {
+        padding: 50px 20px;
+        padding-top: 50px;
+        scroll-margin-top: 60px;
+      }
 
-        section h2 {
-            color: #444;
-            margin-bottom: 10px;
-            font-size: 30px;
-        }
+      section h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-family: "Arial", monospace;
+        font-weight: normal;
+        text-align: center;
+      }
 
-        section p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
+      h2:after,
+      h2:before {
+        content: '';
+        width: 500px;
+        height: 2px;
+        background: #575757;
+        margin: 0 10px;
+      }
 
-        /* Image Gallery Section */
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
+      section h3 {
+        color: #FFFFFF;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-family: "Geist Mono", monospace;
+        font-weight: normal;
+      }
 
-        .gallery img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
+      section p {
+        font-size: 15px;
+        margin-bottom: 20px;
+      }
 
-        /* Table Section */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
 
-        table, th, td {
-            border: 1px solid #ddd;
-        }
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
 
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
 
-        th {
-            background-color: #444;
-            color: white;
-        }
+      th {
+        background-color: #444;
+        color: white;
+      }
 
-        /* Footer Styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
 
-        footer a {
-            color: #f4f4f4;
-            text-decoration: none;
-        }
+      footer a {
+        color: #f4f4f4;
+        text-decoration: none;
+      }
 
-        footer a:hover {
-            text-decoration: underline;
-        }
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
 
-    <!-- Header Section -->
-    <header>
-        <h1>My Photography Portfolio</h1>
-        <p>Capturing moments that last a lifetime</p>
-    </header>
-
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav>
-        <a href="#home">HOME</a>
+      <div class="left">
+        <a href="#home">2024 DESIGN PORTFOLIO</a>
+      </div>
+
+      <div class="right">
         <a href="#about">ABOUT</a>
         <a href="#projects">PROJECTS</a>
         <a href="#resume">RESUME</a>
+      </div>
     </nav>
 
-    <!-- About Me Section -->
+    <!-- Home Section -->
     <section id="home">
-        <h2>About Me</h2>
-        <p>Hello! I'm [Your Name], a passionate photographer with a love for capturing beautiful moments. I specialize in portrait and landscape photography and enjoy working with both natural and studio lighting.</p>
+      <img src="estellekim.png" alt="Estelle Kim">
     </section>
 
-    <!-- Image Gallery Section -->
+    <!-- About Section -->
     <section id="about">
-        <h2>Photography Gallery</h2>
-        <div class="gallery">
-            <img src="image1.jpg" alt="A beautiful sunset over the ocean">
-            <img src="image2.jpg" alt="A portrait of a person with natural lighting">
-            <img src="image3.jpg" alt="A cityscape during golden hour">
-            <img src="image4.jpg" alt="A landscape photograph with mountains and trees">
-            <img src="image5.jpg" alt="A close-up of a flower in the wild">
-        </div>
+      <h2>ABOUT</h2>
+      <h3>INTRO</h3>
+      <p>Hello! I’m Estelle Kim, a graphic and UX/UI designer who is dedicated to creating visually compelling and user-centered designs. <br>I believe that a design has the power to not only solve problems but also engage and inspire. With a focus on both functionality and aesthetics, I work to curate intuitive experiences that leave a lasting impact.</p>
+      <h3>EDUCATION</h3>
+      <p>University of Waterloo <br> Bachelor in Global Business and Digital Arts</p>
+      <h3>SKILLS</h3>
+      <ul>
+        <li>Adobe Illustrator</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Indesign</li>
+        <li>Adobe Premier Pro</li>
+        <li>Adobe After Effects</li>
+        <li>Figma</li>
+        <li>HTML</li>
+        <li>P5.JS</li>
+      </ul>
+      <h3>CONTACT</h3>
+      <p>
+        <a href="mailto:estelle.kimyh@gmail.com">estelle.kimyh@gmail.com</a><br>(647) 819-5133<br><a href="https://www.linkedin.com/in/estelle-kim-" target="_blank">LinkedIn</a>
+      </p>
+
+      <div class="gallery">
+      </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>Services</h2>
-        <p>I offer a range of photography services, including:</p>
-        <ul>
-            <li>Portrait Photography</li>
-            <li>Event Photography</li>
-            <li>Landscape Photography</li>
-            <li>Photo Editing</li>
-        </ul>
-
-        <table>
-            <tr>
-                <th>Service</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Portrait Photography</td>
-                <td>$150 per session</td>
-            </tr>
-            <tr>
-                <td>Event Photography</td>
-                <td>$500 per event</td>
-            </tr>
-            <tr>
-                <td>Landscape Photography</td>
-                <td>$200 per photo</td>
-            </tr>
-        </table>
+      <h2>PROJECTS</h2>
+      <h3>SPROUT</h3>
+      <p>Sprout is a financial app designed to help new parents manage their family finances with ease while fostering a sense of community and connection.<br>Developed during the 2024 uXperience Design Jam, hosted by the University of Waterloo Stratford School and Sun Life, Sprout addresses the challenge of guiding young Canadians through the overwhelming financial landscape. Designed in Figma, the app combines practical budgeting tools with gamified elements, allowing parents to set and track financial goals tailored to their family’s needs. By making financial planning engaging and accessible, Sprout empowers parents to save, plan, and grow their wealth while staying connected with others in similar life stages. My design team was proud to have received an Honourable Mention (third place) for our innovative solution.
+      </p>
+      <h3>SOONHARI REBRAND</h3>
+      <p>I developed a comprehensive branding strategy and visual identity for the South Korean alcohol brand, Soonhari. The task at hand was to identify a consumer brand in need of a branding refresh and developed a comprehensive strategy to address its visual and identity shortcomings.<br>I created a bold, youthful logo using a unique and eye-catching font to better represent the dynamic nature of the brand. I also redesigned the product packaging, creating custom illustrations in Procreate and Adobe Illustrator enhancing the overall unity and originality of the design. </p>
+      <h3>BOOZEBUDDY</h3>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Resume Section -->
     <section id="resume">
-        <h2>Contact</h2>
-        <p>If you're interested in booking a session or have any questions, feel free to reach out!</p>
-        <p>Email: <a href="mailto:yourname@uwaterloo.ca">yourname@uwaterloo.ca</a></p>
-        <p>Follow me on <a href="https://www.instagram.com/yourusername" target="_blank">Instagram</a></p>
+      <h2>RESUME</h2>
+      <img src="download.png" alt="Resume" class="center" width="450" height="auto">
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 [Your Name] Photography. All Rights Reserved.</p>
-        <p><a href="#home">Back to Top</a></p>
+      <p>Best viewed on desktop!</p>
+      <p><a href="#home">BACK TO TOP</a></p>
     </footer>
 
-</body>
+  </body>
 </html>
