@@ -13,6 +13,7 @@
         background-color: #000000;
         padding-top: 60px;
         margin: 0;
+        float: center;
       }
 
       html {
@@ -38,7 +39,10 @@
       nav .right {
         display: flex;
         align-items: center;
+        margin-right: 40px;
+        margin-left: 40px;
       }
+
 
       nav a {
         color: white;
@@ -54,6 +58,7 @@
       /* Home Section */
       #home {
         position: relative;
+        width: 100%;
         height: 85vh;
         display: flex;
         justify-content: center;
@@ -63,30 +68,155 @@
       }
 
       #home img {
-        width: 100%;
+        width: 1300px;
         height: auto;
         margin: 100px 0;
         max-width: 100%;
       }
 
-       #about {
-      width: 1000px;
-      height: 500px;
-      background-color: #2DE1C2;
-      clear: both;
-      position: relative;
-      top: 20px;
-    }
+      #about {
+        position: relative;
+        width: 1000;
+        height: 85vh;
+        background-color: #000000;
+        clear: both;
+        top: 20px;
+        color: #000000;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+      }
 
-    #blockA {
-      width: 333px;
-      height: 200px;
-      background-color: #7FBEAB;
-      float: left;
-      position: relative;
-      top: 50px;
-      left: 50px;
-    }
+      #introblock {
+        width: 500px;
+        height: 270px;
+        border-radius: 50px;
+        background-color: #B726C1;
+        padding: 30px;
+        float: left;
+        position: relative;
+        margin: 10px;
+      }
+
+      #educationblock {
+        width: 300px;
+        height: 120px;
+        border-radius: 50px;
+        background-color: #C8C840;
+        padding: 30px;
+        float: right;
+        position: relative;
+        margin: 10px;
+
+      }
+
+      #skillsblock {
+        width: 300px;
+        height: 265px;
+        border-radius: 50px;
+        background-color: #5AC5C6;
+        padding: 30px;
+        float: right;
+        position: relative;
+        margin: 10px
+      }
+
+      #contactblock {
+        width: 500px;
+        height: 115px;
+        border-radius: 50px;
+        background-color: #3E8A42;
+        padding: 30px;
+        float: left;
+        position: relative;
+        margin: 10px
+      }
+
+      #projects {
+        position: relative;
+        width: 1000;
+        height: 1500;
+        background-color: #000000;
+        clear: both;
+        top: 20px;
+        color: #FFFFFF;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        line-height: 1.2;
+      }
+
+      #blockA {
+        background-color: #000000;
+        width: 500px;
+        height: 450px;
+        display: inline;
+        float: left;
+        padding: 10px;
+        margin-right: 10px;
+      }
+
+      #blockB {
+        background-color: #000000;
+        width: 450px;
+        height: 450px;
+        display: inline;
+        float: right;
+        padding: 10px;
+      }
+
+      #blockC {
+        background-color: #000000;
+        width: 450px;
+        height: 450px;
+        display: inline;
+        float: left;
+        padding: 10px;
+        margin-right: 10px;
+      }
+
+      #blockD {
+        background-color: #000000;
+        width: 500px;
+        height: 450px;
+        display: inline;
+        float: right;
+        padding: 10px;
+      }
+
+      #blockE {
+        background-color: #000000;
+        width: 500px;
+        height: 450px;
+        display: inline;
+        float: left;
+        padding: 10px;
+        margin-right: 10px;
+      }
+
+      #blockF {
+        background-color: #000000;
+        width: 450px;
+        height: 450px;
+        display: inline;
+        float: right;
+        padding: 10px;
+      }
+
+      #blockB img,
+      #blockC img,
+      #blockF img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        max-width: 100%;
+      }
+
+      #resume img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       /* Section Padding Adjustment */
       section {
@@ -100,7 +230,7 @@
         align-items: center;
         justify-content: center;
         color: #FFFFFF;
-        margin-bottom: 10px;
+        margin-bottom: 40px;
         font-size: 15px;
         font-family: "Arial", monospace;
         font-weight: normal;
@@ -117,16 +247,26 @@
       }
 
       section h3 {
-        color: #FFFFFF;
-        margin-bottom: 10px;
+        color: #000000;
+        margin-top: 0px;
+        margin-bottom: 0px;
         font-size: 20px;
+        font-family: "Geist Mono", monospace;
+        font-weight: normal;
+      }
+
+      section h4 {
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 35px;
         font-family: "Geist Mono", monospace;
         font-weight: normal;
       }
 
       section p {
         font-size: 15px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
       }
 
       table {
@@ -153,7 +293,7 @@
       }
 
       footer {
-        background-color: #333;
+        background-color: #000000;
         color: white;
         text-align: center;
         padding: 20px;
@@ -192,51 +332,93 @@
     <!-- About Section -->
     <section id="about">
       <h2>ABOUT</h2>
-      <h3>INTRO</h3>
-      <p>Hello! I’m Estelle Kim, a graphic and UX/UI designer who is dedicated to creating visually compelling and user-centered designs. <br>I believe that a design has the power to not only solve problems but also engage and inspire. With a focus on both functionality and aesthetics, I work to curate intuitive experiences that leave a lasting impact.</p>
-      <h3>EDUCATION</h3>
-      <p>University of Waterloo <br> Bachelor in Global Business and Digital Arts</p>
-      <h3>SKILLS</h3>
-      <ul>
-        <li>Adobe Illustrator</li>
-        <li>Adobe Photoshop</li>
-        <li>Adobe Indesign</li>
-        <li>Adobe Premier Pro</li>
-        <li>Adobe After Effects</li>
-        <li>Figma</li>
-        <li>HTML</li>
-        <li>P5.JS</li>
-      </ul>
-      <h3>CONTACT</h3>
-      <p>
-        <a href="mailto:estelle.kimyh@gmail.com">estelle.kimyh@gmail.com</a><br>(647) 819-5133<br><a href="https://www.linkedin.com/in/estelle-kim-" target="_blank">LinkedIn</a>
-      </p>
+      <div id="introblock">
+        <h3>INTRO</h3>
+        <p>Hello! I’m Estelle Kim, a graphic and UX/UI designer who is dedicated to creating visually compelling and user-centered designs.
+        </p>
+        <p>I believe that a design has the power to not only solve problems but also engage and inspire.</p>
+        <p>With a focus on both functionality and aesthetics, I work to curate intuitive experiences that leave a lasting impact.</p>
+      </div>
 
-      <div class="gallery">
+      <div id="educationblock">
+        <h3>EDUCATION</h3>
+        <p>University of Waterloo <br> Bachelor in Global Business and Digital Arts</p>
+      </div>
+
+      <div id="skillsblock">
+        <h3>SKILLS</h3>
+        <ul>
+          <li>Adobe Illustrator</li>
+          <li>Adobe Photoshop</li>
+          <li>Adobe Indesign</li>
+          <li>Adobe Premier Pro</li>
+          <li>Adobe After Effects</li>
+          <li>Figma</li>
+          <li>HTML</li>
+          <li>P5.JS</li>
+        </ul>
+      </div>
+
+      <div id="contactblock">
+        <h3>CONTACT</h3>
+        <p>
+          <a href="mailto:estelle.kimyh@gmail.com">estelle.kimyh@gmail.com</a><br>(647) 819-5133<br><a href="https://www.linkedin.com/in/estelle-kim-" target="_blank">https://www.linkedin.com/in/estelle-kim-</a>
+        </p>
       </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
       <h2>PROJECTS</h2>
-      <h3>SPROUT</h3>
-      <p>Sprout is a financial app designed to help new parents manage their family finances with ease while fostering a sense of community and connection.<br>Developed during the 2024 uXperience Design Jam, hosted by the University of Waterloo Stratford School and Sun Life, Sprout addresses the challenge of guiding young Canadians through the overwhelming financial landscape. Designed in Figma, the app combines practical budgeting tools with gamified elements, allowing parents to set and track financial goals tailored to their family’s needs. By making financial planning engaging and accessible, Sprout empowers parents to save, plan, and grow their wealth while staying connected with others in similar life stages. My design team was proud to have received an Honourable Mention (third place) for our innovative solution.
-      </p>
-      <h3>SOONHARI REBRAND</h3>
-      <p>I developed a comprehensive branding strategy and visual identity for the South Korean alcohol brand, Soonhari. The task at hand was to identify a consumer brand in need of a branding refresh and developed a comprehensive strategy to address its visual and identity shortcomings.<br>I created a bold, youthful logo using a unique and eye-catching font to better represent the dynamic nature of the brand. I also redesigned the product packaging, creating custom illustrations in Procreate and Adobe Illustrator enhancing the overall unity and originality of the design. </p>
-      <h3>BOOZEBUDDY</h3>
+      <div id="blockA">
+        <h4>SPROUT</h4>
+        <p>Sprout is a financial app designed to help new parents manage their family finances with ease while fostering a sense of community and connection.</p>
+        <p>Developed during the 2024 uXperience Design Jam, hosted by the University of Waterloo Stratford School and Sun Life, Sprout addresses the challenge of guiding young Canadians through the overwhelming financial landscape. Designed in Figma, the app combines practical budgeting tools with gamified elements, allowing parents to set and track financial goals tailored to their family’s needs. By making financial planning engaging and accessible, Sprout empowers parents to save, plan, and grow their wealth while staying connected with others in similar life stages. My design team was proud to have received an Honourable Mention (third place) for our innovative solution.
+        </p>
+      </div>
+
+      <div id="blockB">
+        <img src="sprout.png" alt="Sprout App">
+      </div>
+
+      <hr width="1000px" size="2" color="#575757">
+
+      <div id="blockC">
+        <img src="soonhari.png" alt="Sprout App">
+      </div>
+
+      <div id="blockD">
+        <h4>SOONHARI REBRAND</h4>
+        <p>I developed a comprehensive branding strategy and visual identity for the South Korean alcohol brand, Soonhari. The task at hand was to identify a consumer brand in need of a branding refresh and developed a comprehensive strategy to address its visual and identity shortcomings.</p>
+        <p>I created a bold, youthful logo using a unique and eye-catching font to better represent the dynamic nature of the brand. I also redesigned the product packaging, creating custom illustrations in Procreate and Adobe Illustrator enhancing the overall unity and originality of the design. </p>
+      </div>
+
+      <hr width="1000px" size="2" color="#575757">
+
+      <div id="blockE">
+        <h4>BOOZEBUDDY</h4>
+        <p>BoozeBuddy is a mobile app designed to promote safer drinking habits among young adults. In response to the increasing concerns about alcohol consumption and its potential risks, BoozeBuddy serves as a helpful tool to educate, monitor, and encourage responsible drinking. </p>
+        <p>The app was designed and prototyped on Figma with a user-friendly interface that blends both functionality and a fun, engaging experience. BoozeBuddy offers a variety of features such as a a map/navigation page to locate friends on a night-out, personalized drinking goals, and real-time reminders to help users stay within safe drinking limits.</p>
+        <p>BoozeBuddy aims to foster a positive and responsible drinking culture among young adults, empowering them to make informed decisions while enjoying social events.</p>
+      </div>
+
+      <div id="blockF">
+        <img src="boozebuddy.png" alt="BoozeBuddy App">
+      </div>
     </section>
 
     <!-- Resume Section -->
     <section id="resume">
       <h2>RESUME</h2>
-      <img src="download.png" alt="Resume" class="center" width="450" height="auto">
+      <img src="download.png" alt="Resume" width="450" height="auto">
     </section>
+    
+          <hr width="100%" size="2" color="#575757">
 
     <!-- Footer -->
     <footer>
-      <p>Best viewed on desktop!</p>
-      <p><a href="#home">BACK TO TOP</a></p>
+      <h3>Best viewed on desktop!</h3>
+      <p><a href="mailto:estelle.kimyh@gmail.com">estelle.kimyh@gmail.com</a><br>(647) 819-5133<br><a href="https://www.linkedin.com/in/estelle-kim-" target="_blank">https://www.linkedin.com/in/estelle-kim-</a></p>
     </footer>
 
   </body>
